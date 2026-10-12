@@ -1,5 +1,5 @@
-##TP5: Cronometro y comunicacion en serie 
- 
+# TP4 — Cronómetro Digital y Comunicacion en serie
+
 👥 Integrantes del Equipo
 
 Comisión / Docente: Blasco Marcos - Comisión 4.2
