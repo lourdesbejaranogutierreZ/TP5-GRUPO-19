@@ -1,11 +1,10 @@
 # TP4 — Cronómetro Digital y Comunicacion en serie
 
-👥 Integrantes del Equipo
-
 Comisión / Docente: Blasco Marcos - Comisión 4.2
 Grupo N°: 19
 Scrum Master: Valentin
-Desarrolladores:
+
+👥Desarrolladores:
 Bejarano Lourdes
 Leyria Guillermo
 Tablada Rocio
@@ -15,6 +14,9 @@ Tablada Rocio
 ## Consigna
 
 Diseñar e implementar, sobre el microcontrolador **PIC16F887**, un cronómetro digital que cuenta en el rango **00.00 a 99.99 segundos** (formato SS.CC — segundos y centésimas), con una resolución de **10 ms** en el dígito menos significativo.
+
+
+Ademas, el usuario deberá poder ingresar un valor de cuatro dígitos, ya sea mediante el teclado matricial o desde la computadora con un programa terminal, como Hercules. El microcontrolador recibirá el valor por UART, lo mostrará en el display con el formato SS.CC y permitirá iniciar o pausar el cronómetro con los controles existentes.
 
 ### Hardware
 
@@ -42,18 +44,10 @@ Diseñar e implementar, sobre el microcontrolador **PIC16F887**, un cronómetro 
 ## 📐 Documentación Técnica
 
 ### 1. Diagrama de Bloques
+https://drive.google.com/drive/u/0/folders/1ou7aJKP65mgS5SlwTYi8-WA4XuNQNcI5 
 
-<img width="886" height="586" alt="DIAGRAMA DE BLOQUES TP2" src="https://github.com/user-attachments/assets/82b63ca1-9296-41cb-9635-74c33c3f6ad3" />
+##  Código TP5
+Se encuentra en el apartado Programa TP5
 
-### 1. Diagrama de Flujo
-<img width="1920" height="1080" alt="Texto del párrafo" src="https://github.com/user-attachments/assets/6803b589-20f9-401e-95c2-acc3c795c8fb" />
-
-### 1. Diagrama esquemático
-<img width="359" height="245" alt="image" src="https://github.com/user-attachments/assets/7c349a1d-84b4-44b2-8804-befcc028539e" />
-
-
-##  Código TP2  
-Se encuentra en el apartado Programa TP2
-
-##  Video de Tp2 funcionando
-https://drive.google.com/file/d/1bSBdXwYj9tfNj0Rtb-FOjUdJhKlJqR_I/view?usp=sharing
+##  Simulacion sin UART
+https://drive.google.com/file/d/1dMAR9z8IlqX5DGDOdg7hepHAr-EBhGcw/view?usp=sharing
