@@ -1,3 +1,58 @@
-# Repo-de-prueba
-repo de prueba
-Primer linea agregada
+#TP5: Cronometro y comunicacion en serie 
+👥 Integrantes del Equipo
+
+Comisión / Docente: Blasco Marcos - Comisión 4.2
+Grupo N°: 19
+Scrum Master: Valentin
+Desarrolladores:
+Bejarano Lourdes
+Leyria Guillermo
+Tablada Rocio
+
+---
+
+## Consigna
+
+Diseñar e implementar, sobre el microcontrolador **PIC16F887**, un cronómetro digital que cuenta en el rango **00.00 a 99.99 segundos** (formato SS.CC — segundos y centésimas), con una resolución de **10 ms** en el dígito menos significativo.
+
+### Hardware
+
+- **4 displays de 7 segmentos**, multiplexados, que muestran el valor SS.CC.
+- **2 pulsadores** de control:
+  - **Pulsador de control (RB0):** conectado al pin RB0, único pin del PIC16F887 habilitado para la interrupción externa **INT**. Mediante esta interrupción se gestionan las acciones de **iniciar**, **detener** y **resetear** la cuenta.
+  - **Pulsador secundario:** función a definir en la etapa de ajuste del TP (por ejemplo, separar el reset de la función de inicio/detención).
+
+### Temporización y refresco de displays
+
+- **Cristal:** 4 MHz.
+- **Timer0:** genera una interrupción cada **5 ms**. En cada interrupción se enciende un display distinto (multiplexado secuencial), de modo que el ciclo completo de refresco de los 4 displays se completa cada **20 ms** (4 × 5 ms).
+- **Conteo del cronómetro:** cada 2 interrupciones de Timer0 (10 ms) se incrementa en 1 el dígito de centésimas. El desborde de centésimas incrementa el dígito de unidades de segundo, y así sucesivamente hasta el máximo de 99.99 s, momento en el cual la cuenta se reinicia (o se detiene, a definir).
+- **Interrupción externa INT (RB0):** gestiona los pulsos del pulsador de control para alternar entre los estados de la cuenta (iniciar / detener / resetear).
+
+### Requisitos funcionales resumidos
+
+1. El cronómetro inicia en 00.00 y permanece detenido hasta la primera pulsación de inicio.
+2. Al iniciar, cuenta ascendente con resolución de 10 ms, refrescando los 4 displays sin parpadeo perceptible (ciclo de refresco de 20 ms).
+3. Puede detenerse (pausa) y reanudarse sin perder el valor acumulado.
+4. Puede resetearse a 00.00 cuando está detenido.
+
+---
+
+## 📐 Documentación Técnica
+
+### 1. Diagrama de Bloques
+
+<img width="886" height="586" alt="DIAGRAMA DE BLOQUES TP2" src="https://github.com/user-attachments/assets/82b63ca1-9296-41cb-9635-74c33c3f6ad3" />
+
+### 1. Diagrama de Flujo
+<img width="1920" height="1080" alt="Texto del párrafo" src="https://github.com/user-attachments/assets/6803b589-20f9-401e-95c2-acc3c795c8fb" />
+
+### 1. Diagrama esquemático
+<img width="359" height="245" alt="image" src="https://github.com/user-attachments/assets/7c349a1d-84b4-44b2-8804-befcc028539e" />
+
+
+##  Código TP2  
+Se encuentra en el apartado Programa TP2
+
+##  Video de Tp2 funcionando
+https://drive.google.com/file/d/1bSBdXwYj9tfNj0Rtb-FOjUdJhKlJqR_I/view?usp=sharing
