@@ -1,11 +1,15 @@
 # TP4 — Cronómetro Digital y Comunicacion en serie
 
 Comisión / Docente: Blasco Marcos - 
+
 Comisión 4.2
+
 Grupo N°: 19
+
 Scrum Master: Valentin
 
 👥Desarrolladores:
+
 Bejarano Lourdes
 
 Leyria Guillermo
