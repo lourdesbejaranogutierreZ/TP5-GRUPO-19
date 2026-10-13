@@ -45,8 +45,9 @@ Ademas, el usuario deberá poder ingresar un valor de cuatro dígitos, ya sea me
 
 ## 📐 Documentación Técnica
 
-### 1. Diagrama de Bloques
+## Diagrama de Bloques
 https://drive.google.com/drive/u/0/folders/1ou7aJKP65mgS5SlwTYi8-WA4XuNQNcI5 
-
-##  Simulacion sin UART
+## Diagrama de Flujo
+https://drive.google.com/drive/folders/1o2d0g1pvnEQEbFvhjMhvw6FoOjMo3Q_R?usp=sharing
+## Simulacion sin UART
 https://drive.google.com/file/d/1dMAR9z8IlqX5DGDOdg7hepHAr-EBhGcw/view?usp=sharing
